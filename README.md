@@ -11,7 +11,7 @@ GetAllJournals -> /jounals (It returns list of all the events present in the DB)
 
 Whenever any operation is performed for user(insert, delete or update), Journal Management service recieves the message from User Management service and insert timestamp and that msg into journal_details table.
 
-Spring JPA is used for object relational model mapping.
+Spring JPA is used for object relational model mapping. Kafka Queues are used to communicate to User Management Aplicatioon.Mysql (8.3.0) is used to store journal data.
 
 journals_details
 Id  Message  TimeStamp
